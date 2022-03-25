@@ -19,9 +19,7 @@
         <li style="color: green;">Texte en vert</li>
         </ul>
 
-        <?php
-        /* Encore du PHP
-        Toujours du PHP */
-        ?>
+        <?php echo "Ceci est du texte"; ?>
+        
     </body>
 </html>
