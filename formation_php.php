@@ -21,5 +21,10 @@
 
          <p>Aujourd'hui nous sommes le <?php echo date('d/m/Y h:i:s'); ?>.</p>
 
+         <?php
+          $fullname = "Mathieu Nebra";
+          echo "Bonjour $fullname et bienvenue sur le site !";
+         ?>
+
     </body>
 </html>
