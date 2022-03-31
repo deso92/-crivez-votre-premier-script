@@ -81,5 +81,55 @@ switch ($grade) // on indique sur quelle variable on travaille
 }
 ?>
 
+
+    </br> <hr></hr>
+    <h2><center>BOUCLE -- WHILE --</center></h2>
+
+    <?php
+      $lines = 1;
+        while ($lines <= 10)
+        {
+            echo 'Ceci est la ligne n°' . $lines . '<br />';
+            $lines++;
+        }
+    ?>
+
+    <br />
+  <?php
+
+    $mickael = ['Mickaël Andrieu', 'mickael.andrieu@exemple.com', 'S3cr3t', 34];
+    $mathieu = ['Mathieu Nebra', 'mathieu.nebra@exemple.com', 'devine', 33];
+    $laurene = ['Laurène Castor', 'laurene.castor@exemple.com', 'P4ssw0rD', 28];
+
+    $users = [$mickael, $mathieu, $laurene];
+
+    $lines = 3; // nombre d'utilisateurs dans le tableau
+    $counter = 0;
+
+    while ($counter < $lines) {
+        echo $users[$counter][0] . ' ' . $users[$counter][1] . '<br />';
+        $counter++; // Ne surtout pas oublier la condition de sortie !
+    }
+  ?>
+
+
+      </br> <hr></hr>
+    <h2><center>BOUCLE -- FOR --</center></h2>
+<?php
+
+// Déclaration du tableau des recettes
+$recipes = [
+    ['Cassoulet','[...]','mickael.andrieu@exemple.com',true,],
+    ['Couscous','[...]','mickael.andrieu@exemple.com',false,],
+];
+
+?>
+
+   <ul>
+        <?php for ($lines = 0; $lines <= 1; $lines++): ?>
+            <li><?php echo $recipes[$lines][0] . ' (' . $recipes[$lines][2] . ')'; ?></li>
+        <?php endfor; ?>
+    </ul>
+
     </body>
 </html>
