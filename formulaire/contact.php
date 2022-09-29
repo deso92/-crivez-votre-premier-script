@@ -7,5 +7,6 @@
         <label for="message">Votre message</label>
         <textarea placeholder="Exprimez vous" name="message"></textarea>
     </div>
+    <button type="reset">Annuler</button>
     <button type="submit">Envoyer</button>
 </form>
